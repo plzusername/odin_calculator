@@ -101,3 +101,9 @@
 
 
 
+let numButtons=document.querySelectorAll('.nummber')
+let operatorButtons=document.querySelectorAll('operator')
+let decimalButton=document.querySelector('dot')
+let deleteButton=document.querySelector('delete')
+let clearButton=document.querySelector('clear')
+let equalsButton=document.querySelector('equals')
