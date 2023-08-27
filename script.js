@@ -102,8 +102,19 @@
 
 
 let numButtons=document.querySelectorAll('.nummber')
-let operatorButtons=document.querySelectorAll('operator')
-let decimalButton=document.querySelector('dot')
-let deleteButton=document.querySelector('delete')
-let clearButton=document.querySelector('clear')
-let equalsButton=document.querySelector('equals')
+let operatorButtons=document.querySelectorAll('.operator')
+let decimalButton=document.querySelector('.dot')
+let deleteButton=document.querySelector('.delete')
+let clearButton=document.querySelector('.clear')
+let equalsButton=document.querySelector('.equals')
+let display=document.querySelector('.display-text')
+/*************************************************/
+
+
+/*************************************************/
+operatorButtons.forEach(operator => operator.addEventListener('click',getOperator))
+numButtons.forEach(number => number.addEventListener('click',getNumber))
+deleteButton.addEventListener('click',deleteNum)
+clearButton.addEventListener('click',clearNum)
+decimalButton.addEventListener('click',decimalNum)
+equalsButton.addEventListener('click',evaluate)
